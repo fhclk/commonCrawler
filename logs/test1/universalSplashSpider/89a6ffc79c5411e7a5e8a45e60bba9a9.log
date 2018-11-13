@@ -1,0 +1,21 @@
+2017-09-18 17:34:19 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bigSpider)
+2017-09-18 17:34:19 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'bigSpider.spiders', 'LOG_FILE': 'logs/test1/universalSplashSpider/89a6ffc79c5411e7a5e8a45e60bba9a9.log', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'SPIDER_MODULES': ['bigSpider.spiders'], 'BOT_NAME': 'bigSpider', 'REDIRECT_ENABLED': False, 'FEED_EXPORT_ENCODING': 'utf-8', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'DOWNLOAD_DELAY': 2.55}
+2017-09-18 17:34:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-09-18 17:34:19 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-09-18 17:34:19 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/twisted/internet/defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/crawler.py", line 95, in crawl
+    six.reraise(*exc_info)
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/crawler.py", line 76, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/crawler.py", line 99, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "bigSpider/spiders/universalSplashSpider.py", line 31, in from_crawler
+    crawl_no = kwargs.get('crawlNo', '0') + '--' + crawler.settings.get('DOWNLOAD_DELAY')
+TypeError: cannot concatenate 'str' and 'float' objects

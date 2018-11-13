@@ -1,0 +1,130 @@
+2017-11-01 10:57:18 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bigSpider)
+2017-11-01 10:57:18 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'bigSpider.spiders', 'LOG_FILE': 'logs/bigSpider/universalSpider/5d5d6c23beb011e7b8d0a45e60bba9a9.log', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'SPIDER_MODULES': ['bigSpider.spiders'], 'BOT_NAME': 'bigSpider', 'REDIRECT_ENABLED': False, 'FEED_EXPORT_ENCODING': 'utf-8', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'DOWNLOAD_DELAY': 2.05}
+2017-11-01 10:57:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:18 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-01 10:57:28 [root] DEBUG: Error occurred during fetching http://useragentstring.com/pages/useragentstring.php?name=Chrome
+Traceback (most recent call last):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 67, in get
+    context=context,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error timed out>
+2017-11-01 10:57:28 [root] DEBUG: Sleeping for 0.1 seconds
+2017-11-01 10:57:34 [root] WARNING: Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.7
+Traceback (most recent call last):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 162, in load
+    verify_ssl=verify_ssl,
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 122, in get_browser_versions
+    verify_ssl=verify_ssl,
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 67, in get
+    context=context,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1132, in getresponse
+    response.begin()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 453, in begin
+    version, status, reason = self._read_status()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 409, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+timeout: timed out
+2017-11-01 10:57:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'bigSpider.middlewares.RandomUserAgentMiddlware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-01 10:57:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-01 10:57:37 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline` is deprecated, use `scrapy.pipelines` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2017-11-01 10:57:37 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline.images` is deprecated, use `scrapy.pipelines.images` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2017-11-01 10:57:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['bigSpider.pipelines.ImageDownloadPipeline',
+ 'bigSpider.pipelines.BigspiderPipeline']
+2017-11-01 10:57:37 [scrapy.core.engine] INFO: Spider opened
+2017-11-01 10:57:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-01 10:57:37 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-11-01 10:57:37 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.creditchina.gov.cn/channel_news/1/1> (referer: None)
+2017-11-01 10:57:37 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.creditchina.gov.cn/channel_news/1/1>: HTTP status code is not handled or not allowed
+2017-11-01 10:57:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-11-01 10:57:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 311,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 283,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 1, 2, 57, 37, 374319),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'log_count/DEBUG': 4,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 10,
+ 'memusage/max': 57933824,
+ 'memusage/startup': 57933824,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2017, 11, 1, 2, 57, 37, 92977)}
+2017-11-01 10:57:37 [scrapy.core.engine] INFO: Spider closed (finished)

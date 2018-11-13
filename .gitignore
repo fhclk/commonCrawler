@@ -1,0 +1,12 @@
+*.pyc
+.DS_Store
+._*
+test/
+.idea/
+.ropeproject/
+build/
+twistd.pid
+project.egg-info/
+proxyes.dat
+scrapy.cfg
+

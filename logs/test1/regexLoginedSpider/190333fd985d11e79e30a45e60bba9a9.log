@@ -1,0 +1,85 @@
+2017-09-13 16:25:32 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bigSpider)
+2017-09-13 16:25:32 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'bigSpider.spiders', 'LOG_FILE': 'logs/test1/regexLoginedSpider/190333fd985d11e79e30a45e60bba9a9.log', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'SPIDER_MODULES': ['bigSpider.spiders'], 'BOT_NAME': 'bigSpider', 'FEED_EXPORT_ENCODING': 'utf-8', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'DOWNLOAD_DELAY': 1.25}
+2017-09-13 16:25:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-09-13 16:25:34 [root] WARNING: Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.7
+Traceback (most recent call last):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 150, in load
+    for item in get_browsers(verify_ssl=verify_ssl):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 97, in get_browsers
+    html = get(settings.BROWSERS_STATS_PAGE, verify_ssl=verify_ssl)
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 67, in get
+    context=context,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1240, in https_open
+    context=self._context)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1194, in do_open
+    h.request(req.get_method(), req.get_selector(), req.data, headers)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1053, in request
+    self._send_request(method, url, body, headers)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1093, in _send_request
+    self.endheaders(body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1274, in connect
+    server_hostname=server_hostname)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 352, in wrap_socket
+    _context=self)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 579, in __init__
+    self.do_handshake()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 816, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py", line 271, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+CertificateError: hostname u'www.w3schools.com' doesn't match either of 'gp1.wac.edgecastcdn.net', 'wac.edgecastcdn.net', 'ne.wac.edgecastcdn.net', 'cdn.traceregister.com', 's.tmocache.com', 's.my.tmocache.com', 'static.woopra.com', 'images.esellerpro.com', 'use.typekit.com', 'static.iseatz.com', 'static.www.turnto.com', 'inpath-static.iseatz.com', 'secure.avelleassets.com', 'static.dubli.com', 'cdn1.fishpond.co.nz', 'cdn1.fishpond.com.au', 'cdn.whois.com.au', 'ne1.wac.edgecastcdn.net', 'gs1.wac.edgecastcdn.net', 'edgecast.onegrp.com', 'cdn.psw.net', 'cdn.gaggle.net', 'fast.fonts.com', 'ec.xnglobalres.com', 'cdcssl.ibsrv.net', 'player.vzaar.com', 'framegrabs.vzaar.com', 'thumbs.vzaar.com', 'content.aqcdn.com', 'ec.dstimage.disposolutions.com', 'welcome2.carsdirect.com', 's1.card-images.com', 'www.outsystems.com', 'www.drwmedia.com', 'cdn.taxact.com', 'cdn.taxactonline.com', 'ssl.cdn-redfin.com', 'cdn.foxycart.com', 'ssl.booztx.com', 'p.typekit.net', 'use.typekit.net', 'cdn.thewatershed.com', 'b2bportal.disneylandparis.com', 'b2bportal.disneytravelagents.co.uk', 'assets.zendesk.com', 'a.cdnkic.com', 's.cdnkic.com', 'cdn.cartrawler.com', 'www.edgecast.com'
+2017-09-13 16:25:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'bigSpider.middlewares.RandomUserAgentMiddlware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-13 16:25:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-13 16:25:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['bigSpider.pipelines.BigspiderPipeline']
+2017-09-13 16:25:37 [scrapy.core.engine] INFO: Spider opened
+2017-09-13 16:25:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-13 16:25:37 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-13 16:25:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-09-13 16:25:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 9, 13, 8, 25, 37, 497002),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 64286720,
+ 'memusage/startup': 64286720,
+ 'start_time': datetime.datetime(2017, 9, 13, 8, 25, 37, 479854)}
+2017-09-13 16:25:37 [scrapy.core.engine] INFO: Spider closed (finished)

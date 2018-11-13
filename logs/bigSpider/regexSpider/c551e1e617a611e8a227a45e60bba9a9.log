@@ -1,0 +1,180 @@
+2018-02-22 16:02:50 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bigSpider)
+2018-02-22 16:02:50 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'bigSpider.spiders', 'LOG_FILE': 'logs/bigSpider/regexSpider/c551e1e617a611e8a227a45e60bba9a9.log', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'SPIDER_MODULES': ['bigSpider.spiders'], 'BOT_NAME': 'bigSpider', 'REDIRECT_ENABLED': False, 'FEED_EXPORT_ENCODING': 'utf-8', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'DOWNLOAD_DELAY': 2.05}
+2018-02-22 16:02:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 16:02:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'bigSpider.middlewares.RandomUserAgentMiddlware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-22 16:02:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-22 16:02:50 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline` is deprecated, use `scrapy.pipelines` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2018-02-22 16:02:50 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline.images` is deprecated, use `scrapy.pipelines.images` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2018-02-22 16:02:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['bigSpider.pipelines.ImageDownloadPipeline',
+ 'bigSpider.pipelines.BigspiderPipeline']
+2018-02-22 16:02:50 [scrapy.core.engine] INFO: Spider opened
+2018-02-22 16:02:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-22 16:02:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-22 16:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/> (referer: None)
+2018-02-22 16:02:51 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.gov.cn': <GET http://www.gov.cn/guoqing/2005-12/26/content_2652073.htm>
+2018-02-22 16:02:51 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.yidaiyilu.gov.cn/footprint.htm>
+Traceback (most recent call last):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/twisted/internet/defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/core/downloader/middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "bigSpider/middlewares.py", line 78, in process_request
+    request.headers.setdefault('User_Agent',get_ua())
+  File "bigSpider/middlewares.py", line 76, in get_ua
+    return getattr(self.ua,self.ua_type)
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/fake.py", line 139, in __getattr__
+    raise FakeUserAgentError('Error occurred during getting browser')  # noqa
+FakeUserAgentError: Error occurred during getting browser
+2018-02-22 16:02:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/roll/48444.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:02:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/roll/48444.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/roll/48444.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:02:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/48429.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:02:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/48429.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/48429.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:02:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/48431.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:02:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/48431.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/48431.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:02:59 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2018-02-22 16:02:59 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-02-22 16:03:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/48445.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/48445.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/48445.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/48447.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/48447.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/48447.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/48443.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/48443.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/48443.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/pdjdt/47889.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/pdjdt/47889.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/pdjdt/47889.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/pdjdt/47866.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/pdjdt/47866.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/pdjdt/47866.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/pdjdt/48399.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/pdjdt/48399.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/pdjdt/48399.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/sy/sxjdt/48364.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/sy/sxjdt/48364.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/sy/sxjdt/48364.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/44334.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/44334.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/44334.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/gnxw/47998.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/gnxw/47998.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/gnxw/47998.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/xgcdt/47692.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/xgcdt/47692.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/xgcdt/47692.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/xgcdt/48378.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/xgcdt/48378.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/xgcdt/48378.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/ghsl.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 16:03:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/ghsl.htm>
+{'crawl_no': '20180222160242055',
+ 'link': 'https://www.yidaiyilu.gov.cn/ghsl.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 16:03:28 [scrapy.crawler] INFO: Received SIGTERM twice, forcing unclean shutdown

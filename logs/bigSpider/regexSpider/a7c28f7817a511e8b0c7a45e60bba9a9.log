@@ -1,0 +1,83 @@
+2018-02-22 15:54:55 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bigSpider)
+2018-02-22 15:54:55 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'bigSpider.spiders', 'LOG_FILE': 'logs/bigSpider/regexSpider/a7c28f7817a511e8b0c7a45e60bba9a9.log', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'SPIDER_MODULES': ['bigSpider.spiders'], 'BOT_NAME': 'bigSpider', 'REDIRECT_ENABLED': False, 'FEED_EXPORT_ENCODING': 'utf-8', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'DOWNLOAD_DELAY': 2.05}
+2018-02-22 15:54:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-02-22 15:54:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'bigSpider.middlewares.RandomUserAgentMiddlware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-22 15:54:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-22 15:54:55 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline` is deprecated, use `scrapy.pipelines` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2018-02-22 15:54:55 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline.images` is deprecated, use `scrapy.pipelines.images` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2018-02-22 15:54:55 [scrapy.middleware] INFO: Enabled item pipelines:
+['bigSpider.pipelines.ImageDownloadPipeline',
+ 'bigSpider.pipelines.BigspiderPipeline']
+2018-02-22 15:54:55 [scrapy.core.engine] INFO: Spider opened
+2018-02-22 15:54:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-22 15:54:55 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-22 15:54:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/> (referer: None)
+2018-02-22 15:54:56 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.gov.cn': <GET http://www.gov.cn/guoqing/2005-12/26/content_2652073.htm>
+2018-02-22 15:54:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/roll/48444.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 15:54:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/roll/48444.htm>
+{'crawl_no': '20180222155446594',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/roll/48444.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 15:55:00 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2018-02-22 15:55:00 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-02-22 15:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/roll/48432.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 15:55:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/roll/48432.htm>
+{'crawl_no': '20180222155446594',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/roll/48432.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 15:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.yidaiyilu.gov.cn/xwzx/roll/48430.htm> (referer: https://www.yidaiyilu.gov.cn/)
+2018-02-22 15:55:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.yidaiyilu.gov.cn/xwzx/roll/48430.htm>
+{'crawl_no': '20180222155446594',
+ 'link': 'https://www.yidaiyilu.gov.cn/xwzx/roll/48430.htm',
+ 'rule_id': 1.0,
+ u'test1': None,
+ u'test2': None}
+2018-02-22 15:55:03 [scrapy.crawler] INFO: Received SIGTERM twice, forcing unclean shutdown

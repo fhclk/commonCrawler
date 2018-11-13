@@ -1,0 +1,273 @@
+2017-11-02 09:48:36 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bigSpider)
+2017-11-02 09:48:36 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'bigSpider.spiders', 'LOG_FILE': 'logs/bigSpider/universalSplashSpider/eee2e9d7bf6f11e7ac23a45e60bba9a9.log', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'SPIDER_MODULES': ['bigSpider.spiders'], 'BOT_NAME': 'bigSpider', 'REDIRECT_ENABLED': False, 'FEED_EXPORT_ENCODING': 'utf-8', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'DOWNLOAD_DELAY': 2.05}
+2017-11-02 09:48:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:37 [py.warnings] WARNING: /Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-11-02 09:48:51 [root] WARNING: Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.7
+Traceback (most recent call last):
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 162, in load
+    verify_ssl=verify_ssl,
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 122, in get_browser_versions
+    verify_ssl=verify_ssl,
+  File "/Volumes/FHCLK/develop/python/commonCrawler/lib/python2.7/site-packages/fake_useragent/utils.py", line 67, in get
+    context=context,
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 449, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1200, in do_open
+    r = h.getresponse(buffering=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1132, in getresponse
+    response.begin()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 453, in begin
+    version, status, reason = self._read_status()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 409, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+timeout: timed out
+2017-11-02 09:48:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'bigSpider.middlewares.RandomUserAgentMiddlware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-02 09:48:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-02 09:48:54 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline` is deprecated, use `scrapy.pipelines` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2017-11-02 09:48:54 [py.warnings] WARNING: bigSpider/pipelines.py:124: ScrapyDeprecationWarning: Module `scrapy.contrib.pipeline.images` is deprecated, use `scrapy.pipelines.images` instead
+  from scrapy.contrib.pipeline.images import ImagesPipeline
+
+2017-11-02 09:48:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['bigSpider.pipelines.ImageDownloadPipeline',
+ 'bigSpider.pipelines.BigspiderPipeline']
+2017-11-02 09:48:54 [scrapy.core.engine] INFO: Spider opened
+2017-11-02 09:48:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-02 09:48:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-11-02 09:49:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.zgg.org.cn/zhl/xjpjhwzh/index.html via http://localhost:8050/render.html> (failed 1 times): User timeout caused connection failure: Getting http://localhost:8050/render.html took longer than 10 seconds..
+2017-11-02 09:49:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.zgg.org.cn/zhl/xjpjhwzh/index.html via http://localhost:8050/render.html> (failed 2 times): User timeout caused connection failure: Getting http://localhost:8050/render.html took longer than 10 seconds..
+2017-11-02 09:49:16 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2017-11-02 09:49:16 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-11-02 09:49:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zgg.org.cn/zhl/xjpjhwzh/index.html via http://localhost:8050/render.html> (referer: None)
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-10-10 )',
+ 'item_link': u'http://cpc.people.com.cn/n1/2016/1010/c64094-28763907.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73:\u52a0\u5feb\u63a8\u8fdb\u7f51\u7edc\u4fe1\u606f\u6280\u672f\u81ea\u4e3b\u521b\u65b0'}
+2017-11-02 09:49:21 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'cpc.people.com.cn': <GET http://cpc.people.com.cn/n1/2016/1010/c64094-28763907.html>
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-10-10 )',
+ 'item_link': u'http://cpc.people.com.cn/n1/2016/0929/c64094-28751251.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e2d\u5171\u4e2d\u592e\u4e3e\u884c\u5b66\u4e60\u300a\u80e1\u9526\u6d9b\u6587\u9009\u300b\u62a5\u544a\u4f1a \u4e60\u8fd1\u5e73\u53d1\u8868\u91cd\u8981\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-04-02 )',
+ 'item_link': u'http://www.zgg.org.cn/tpxw_4074/201604/t20160402_574139.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u51fa\u5e2d\u7b2c\u56db\u5c4a\u6838\u5b89\u5168\u5cf0\u4f1a\u5e76\u53d1\u8868\u91cd\u8981\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-04-01 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201604/t20160401_574103.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u6838\u5b89\u5168\u6ca1\u6709\u6b62\u5883\uff0c\u4e5f\u6ca1\u6709\u6377\u5f84'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-04-01 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201604/t20160401_573977.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u4f1a\u89c1\u5965\u5df4\u9a6c\uff1a\u63a8\u52a8\u4e24\u56fd\u5173\u7cfb\u6cbf\u5065\u5eb7\u7a33\u5b9a\u8f68\u9053\u53d1\u5c55'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-03-13 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201603/t20160322_572259.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u63a8\u52a8\u56fd\u9632\u548c\u519b\u961f\u5efa\u8bbe\u5b9e\u73b0\u65b0\u8de8\u8d8a'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-03-10 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201603/t20160322_572257.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u53c2\u52a0\u9752\u6d77\u56e2\u5ba1\u8bae\uff1a\u5fc5\u987b\u6a2a\u4e0b\u4e00\u6761\u5fc3 \u6253\u8d62\u8131\u8d2b\u653b\u575a\u6218'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-03-08 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201603/t20160308_569789.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u6c11\u6709\u6240\u60f3\u6240\u6c42 \u6211\u4eec\u5c31\u8981\u4e3a\u4ed6\u4eec\u670d\u52a1'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-03-07 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201603/t20160307_569459.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u53c2\u52a0\u9ed1\u9f99\u6c5f\u4ee3\u8868\u56e2\u5ba1\u8bae\uff1a\u5168\u9762\u632f\u5174\u51b3\u5fc3\u4e0d\u80fd\u52a8\u6447'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-03-05 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201603/t20160305_569160.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u53c2\u52a0\u4e0a\u6d77\u56e2\u5ba1\u8bae\uff1a\u52a0\u5f3a\u6df1\u5316\u6539\u9769\u5f00\u653e\u63aa\u65bd\u7cfb\u7edf\u96c6\u6210'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-03-04 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201603/t20160304_569139.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u770b\u671b\u6c11\u5efa\u3001\u5de5\u5546\u8054\u754c\u59d4\u5458\u5e76\u53c2\u52a0\u8054\u7ec4\u8ba8\u8bba'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2016-02-26 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201602/t20160226_568105.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u5404\u7ea7\u515a\u59d4\u8981\u91cd\u6e29\u300a\u515a\u59d4\u4f1a\u5de5\u4f5c\u65b9\u6cd5\u300b'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-11-19 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201511/t20151119_553874.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u53d1\u6325\u4e9a\u592a\u5f15\u9886\u4f5c\u7528 \u5e94\u5bf9\u4e16\u754c\u7ecf\u6d4e\u6311\u6218'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-09-28 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201509/t20150929_544353.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u643a\u624b\u6784\u5efa\u5408\u4f5c\u5171\u8d62\u65b0\u4f19\u4f34 \u540c\u5fc3\u6253\u9020\u4eba\u7c7b\u547d\u8fd0\u5171\u540c\u4f53'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-09-27 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201509/t20150928_544118.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u8c0b\u5171\u540c\u6c38\u7eed\u53d1\u5c55 \u505a\u5408\u4f5c\u5171\u8d62\u4f19\u4f34'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-09-04 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201509/t20150906_539885.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u7eaa\u5ff5\u6297\u6218\u80dc\u522970\u5468\u5e74\u5927\u4f1a\u4e0a\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-09-01 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201509/t20150901_539241.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u4f1a\u89c1\u5168\u56fd\u4f18\u79c0\u53bf\u59d4\u4e66\u8bb0\u65f6\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-07-11 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201507/t20150713_530347.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u4e0a\u6d77\u5408\u4f5c\u7ec4\u7ec7\u6210\u5458\u56fd\u5143\u9996\u7406\u4e8b\u4f1a\u7b2c\u5341\u4e94\u6b21\u4f1a\u8bae\u4e0a\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-07-10 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201507/t20150710_529968.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u91d1\u7816\u56fd\u5bb6\u9886\u5bfc\u4eba\u7b2c\u4e03\u6b21\u4f1a\u6664\u4e0a\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-06-13 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201506/t20150615_525054.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u7eaa\u5ff5\u9648\u4e91\u540c\u5fd7\u8bde\u8fb0110\u5468\u5e74\u5ea7\u8c08\u4f1a\u4e0a\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-05-24 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201505/t20150525_520768.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u4e2d\u65e5\u53cb\u597d\u4ea4\u6d41\u5927\u4f1a\u4e0a\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-04-07 )',
+ 'item_link': u'http://www.zgg.org.cn/ywjj/zygc/ldrbgj/xjp/zyjh/201504/t20150408_510114.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u51fa\u5e2d\u7b2c\u5341\u4e94\u5c4a\u4e2d\u8d8a\u9752\u5e74\u53cb\u597d\u4f1a\u89c1\u6d3b\u52a8\u65f6\u7684\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-03-28 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201503/t20150330_508598.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u8fc8\u5411\u547d\u8fd0\u5171\u540c\u4f53 \u5f00\u521b\u4e9a\u6d32\u65b0\u672a\u6765'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2015-02-02 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201502/t20150203_498719.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\uff1a\u9886\u5bfc\u5e72\u90e8\u8981\u505a\u5c0a\u6cd5\u5b66\u6cd5\u5b88\u6cd5\u7528\u6cd5\u7684\u6a21\u8303'}
+2017-11-02 09:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zgg.org.cn/zhl/xjpjhwzh/index.html>
+{'crawl_no': '20171102094827401',
+ u'date': u'( 2014-12-16 )',
+ 'item_link': u'http://www.zgg.org.cn/zhl/xjpjhwzh/201412/t20141215_488213.html',
+ 'link': 'http://www.zgg.org.cn/zhl/xjpjhwzh/index.html',
+ u'title': u'\u4e60\u8fd1\u5e73\u5728\u5357\u4eac\u5927\u5c60\u6740\u6b7b\u96be\u8005\u56fd\u5bb6\u516c\u796d\u4eea\u5f0f\u4e0a\u8bb2\u8bdd'}
+2017-11-02 09:49:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 2,
+ 'downloader/request_bytes': 1935,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 16431,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 11, 2, 1, 49, 21, 846270),
+ 'item_scraped_count': 25,
+ 'log_count/DEBUG': 30,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 10,
+ 'memusage/max': 66027520,
+ 'memusage/startup': 66027520,
+ 'offsite/domains': 1,
+ 'offsite/filtered': 2,
+ 'request_depth_max': 1,
+ 'response_received_count': 1,
+ 'retry/count': 2,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 2,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 28,
+ 'scheduler/enqueued/memory': 28,
+ 'splash/render.html/request_count': 1,
+ 'splash/render.html/response_count/200': 1,
+ 'start_time': datetime.datetime(2017, 11, 2, 1, 48, 54, 263792)}
+2017-11-02 09:49:21 [scrapy.core.engine] INFO: Spider closed (shutdown)
