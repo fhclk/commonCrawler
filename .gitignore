@@ -5,6 +5,8 @@ test/
 .idea/
 .ropeproject/
 build/
+pic/
+images/
 twistd.pid
 project.egg-info/
 proxyes.dat
